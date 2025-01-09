@@ -1,12 +1,11 @@
-const express = require('express');
-const app = express();
+const http = require('http');
 
-const workout1 = require('./workout_1');
+const server = http.createServer((req,res)=>{
+  res.statusCode = 200; 
+  res.setHeader('Content-Type','text/plain');
+  res.end('Hellodf');
+})
 
-app.use(express.json());
-app.use(workout1);
-
-
-app.listen(3000,()=>{
-  console.log('server start running');
+server.listen(3000,()=>{
+  console.log('server is running')
 })
