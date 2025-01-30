@@ -2,6 +2,7 @@
   "name": "workouts",
   "version": "1.0.0",
   "description": "workouts for node",
+  "type":"commonjs",
   "main": "index.js",
   "scripts": {
     "start": "nodemon main.js",
